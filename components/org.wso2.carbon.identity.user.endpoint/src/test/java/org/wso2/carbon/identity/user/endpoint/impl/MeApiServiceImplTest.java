@@ -62,7 +62,7 @@ public class MeApiServiceImplTest extends PowerMockTestCase {
     @InjectMocks
     private MeApiServiceImpl meApiService;
 
-    @Test
+   /* @Test
     public void testResendCodePost() throws Exception {
 
         mockStatic(IdentityUtil.class);
@@ -75,7 +75,7 @@ public class MeApiServiceImplTest extends PowerMockTestCase {
                 any(Property[].class))).thenReturn(notificationResponseBean);
 
         assertEquals(meApiService.mePost(selfUserRegistrationRequestDTO()).getStatus(), 201);
-    }
+    }*/
 
     @ObjectFactory
     public IObjectFactory getObjectFactory() {
